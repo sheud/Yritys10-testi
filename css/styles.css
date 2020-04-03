@@ -1,0 +1,194 @@
+body {
+    font: 100% Verdana, Arial, Helvetica, sans-serif;
+    background: tomato;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #FDF5E6;
+
+
+
+  }
+
+.jumbotron {
+    background: #bdcebe url(../images/lehti1.jpg) no-repeat left top;
+    background-size: cover;
+    text-align: center;
+
+}
+
+      #otsikkoa a:hover,
+      #otsikko a:active,
+      #otsikko a:focus {
+        text-decoration: none;
+        color: black;
+
+    }
+    #otsikko a:link:active, a:visited:active {
+      color: black;
+}
+
+.container-fluid {
+    font-size: 80%;
+
+
+
+
+}
+
+
+.row {
+    padding-left: 0px;
+    padding-right: 0px;
+
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+
+#sidebar1 {
+    box-sizing: border-box;
+    padding: 20px;
+    background: #ADD8E6;
+
+
+}
+
+#middlebar1 {
+    box-sizing: border-box;
+    padding: 20px;
+    background: #D3D3D3;
+
+}
+
+    #middlebar2 {
+
+      background:#F5F5F5;
+      box-sizing: border-box;
+      padding: 20px;
+
+      }
+
+  #sidebar2 {
+    box-sizing: border-box;
+    padding: 20px;
+    background: #FDF5E6;
+
+
+}
+
+#footer {
+    text-align: center;
+    padding: 0 10px 0 20px;
+    background: #D3D3D3;
+
+
+    position: relative;
+    margin-top: 165px;
+    clear:both;
+}
+
+  #footer p {
+    margin: 0;
+    padding: 10px 0;
+    box-sizing: border-box;
+  }
+
+
+
+
+
+
+
+ #sidebar1 ul {
+      list-style:none;
+      margin: 0px;
+      padding: 0px;
+
+  }
+ #sidebar1 ul li {
+      float: left;
+      width: 150px;
+      height: 40px;
+      line-height: 40px;
+      border-bottom:dashed 1px;
+
+  }
+ #sidebar1 ul li a {
+      text-decoration: none;
+      display: block;
+      color:black;
+  }
+
+
+
+
+.container-fluid .search-box {
+    position: center;
+    margin-left: 10px;
+    background: #D3D3D3;
+    height: 60px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.container-fluid .search-box:hover > .search-txt {
+    width: 240px;
+    padding: 0 6px;
+
+}
+.container-fluid:hover .search-btn {
+    background: white;
+    color: black;
+    text-decoration: none;
+}
+.container-fluid .search-btn {
+    color: white;
+    float:right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.container-fluid .search-txt {
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: black;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 240px;
+
+}
+ .container-fluid .btn-light  {
+    background-color: #D3D3D3;
+    color: #999999;
+
+}
+.container-fluid label {
+    padding: 0 0 0 2px;
+}
+
+ #footer a {
+     color:blue;
+ }
+
+#datepicker1 {
+    padding-left: 10px;
+}
+#datepicker2 {
+    padding-left: 10px;
+}
+#kalenterilista1 label {
+    padding-left: 10px;
+}
+#kalenterilista2 label {
+    padding-left: 10px;
+}
