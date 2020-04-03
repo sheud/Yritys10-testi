@@ -157,8 +157,8 @@
                             <li>
 
                                 <div class="search-box">
-                                    <input class="search-txt" type="text" name="" placeholder="Type to search">
-                                    <a class="search-btn" href="Yritys11.aspx">  <!--Search buttonin linkki -->
+                                    <input class="search-txt" type="text" name="" placeholder="Type to search"/>
+                                       <a class="search-btn" href="Yritys11.aspx">  <!--Search buttonin linkki -->
                                         <i class="fa fa-search"></i>
                                     </a>
                                 </div>
