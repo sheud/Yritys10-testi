@@ -1,11 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Yritys11.aspx.cs" Inherits="Yritys10.Yritys11" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Yritys13.aspx.cs" Inherits="Yritys10.Yritys13" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-   
-    <meta charset="utf-8"/>
+  
+     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="css/styles.css"/>
     <link rel="stylesheet" href="css/bootstrap.css"/>
@@ -20,8 +20,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!--kalenterin jutut loppuu-->
+
     <script src="css/bootstrap.js"></script>
-    <title>List of searched companies</title>
+    <title>Marikemmo information</title>
 
 </head>
 <body>
@@ -40,16 +41,15 @@
         <div class="row">
             <div class="col" style="padding: 0;">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <a class="navbar-brand" href ="Yrityshakusivu.aspx" >Home</a> <!-- home buttoni -->
+                    <a class="navbar-brand" href="Yrityshakusivu.aspx">Home</a> <!-- home buttoni -->
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
 
-                            
-                            <!--multicheck dropdown boxit alkaa-->
                             <li>
+                            <!--multicheck dropdown boxit alkaa-->
                               <form action="#">
                                     <%
                                         String[] municipalities = { "Akaa","Alajärvi","Alavieska","Alavus","Asikkala","Askola","Aura","Brändö","Eckerö","Enonkoski","Enontekiö","Espoo","Eura","Eurajoki","Evijärvi","Finström","Forssa","Föglö","Geta","Haapajärvi","Haapavesi","Hailuoto","Halsua","Hamina","Hammarland","Hankasalmi","Hanko","Harjavalta","Hartola","Hattula","Hausjärvi","Heinola","Heinävesi","Helsinki","Hirvensalmi","Hollola","Honkajoki","Huittinen","Humppila","Hyrynsalmi","Hyvinkää","Hämeenkyrö","Hämeenlinna","Ii","Iisalmi","Iitti","Ikaalinen","Ilmajoki","Ilomantsi","Imatra","Inari","Inkoo","Isojoki","Isokyrö","Janakkala","Joensuu","Jokioinen","Jomala","Joroinen","Joutsa","Juuka","Juupajoki","Juva","Jyväskylä","Jämijärvi","Jämsä","Järvenpää","Kaarina","Kaavi","Kajaani","Kalajoki","Kangasala","Kangasniemi","Kankaanpää","Kannonkoski","Kannus","Karijoki","Karkkila","Karstula","Karvia","Kaskinen","Kauhajoki","Kauhava","Kauniainen","Kaustinen","Keitele","Kemi","Kemijärvi","Keminmaa","Kemiönsaari","Kempele","Kerava","Keuruu","Kihniö","Kinnula","Kirkkonummi","Kitee","Kittilä","Kiuruvesi","Kivijärvi","Kokemäki","Kokkola","Kolari","Konnevesi","Kontiolahti","Korsnäs","Koski Tl","Kotka","Kouvola","Kristiinankaupunki","Kruunupyy","Kuhmo","Kuhmoinen","Kumlinge","Kuopio","Kuortane","Kurikka","Kustavi","Kuusamo","Kyyjärvi","Kärkölä","Kärsämäki","Kökar","Lahti","Laihia","Laitila","Lapinjärvi","Lapinlahti","Lappajärvi","Lappeenranta","Lapua","Laukaa","Lemi","Lemland","Lempäälä","Leppävirta","Lestijärvi","Lieksa","Lieto","Liminka","Liperi","Lohja","Loimaa","Loppi","Loviisa","Luhanka","Lumijoki","Lumparland","Luoto","Luumäki","Maalahti","Maarianhamina - Mariehamn","Marttila","Masku","Merijärvi","Merikarvia","Miehikkälä","Mikkeli","Muhos","Multia","Muonio","Mustasaari","Muurame","Mynämäki","Myrskylä","Mäntsälä","Mänttä-Vilppula","Mäntyharju","Naantali","Nakkila","Nivala","Nokia","Nousiainen","Nurmes","Nurmijärvi","Närpiö","Orimattila","Oripää","Orivesi","Oulainen","Oulu","Outokumpu","Padasjoki","Paimio","Paltamo","Parainen","Parikkala","Parkano","Pedersören kunta","Pelkosenniemi","Pello","Perho","Pertunmaa","Petäjävesi","Pieksämäki","Pielavesi","Pietarsaari","Pihtipudas","Pirkkala","Polvijärvi","Pomarkku","Pori","Pornainen","Porvoo","Posio","Pudasjärvi","Pukkila","Punkalaidun","Puolanka","Puumala","Pyhtää","Pyhäjoki","Pyhäjärvi","Pyhäntä","Pyhäranta","Pälkäne","Pöytyä","Raahe","Raasepori","Raisio","Rantasalmi","Ranua","Rauma","Rautalampi","Rautavaara","Rautjärvi","Reisjärvi","Riihimäki","Ristijärvi","Rovaniemi","Ruokolahti","Ruovesi","Rusko","Rääkkylä","Saarijärvi","Salla","Salo","Saltvik","Sastamala","Sauvo","Savitaipale","Savonlinna","Savukoski","Seinäjoki","Sievi","Siikainen","Siikajoki","Siikalatva","Siilinjärvi","Simo","Sipoo","Siuntio","Sodankylä","Soini","Somero","Sonkajärvi","Sotkamo","Sottunga","Sulkava","Sund","Suomussalmi","Suonenjoki","Sysmä","Säkylä","Taipalsaari","Taivalkoski","Taivassalo","Tammela","Tampere","Tervo","Tervola","Teuva","Tohmajärvi","Toholampi","Toivakka","Tornio","Turku","Tuusniemi","Tuusula","Tyrnävä","Ulvila","Urjala","Utajärvi","Utsjoki","Uurainen","Uusikaarlepyy","Uusikaupunki","Vaala","Vaasa","Valkeakoski","Valtimo","Vantaa","Varkaus","Vehmaa","Vesanto","Vesilahti","Veteli","Vieremä","Vihti","Viitasaari","Vimpeli","Virolahti","Virrat","Vårdö","Vöyri","Ylitornio","Ylivieska","Ylöjärvi","Ypäjä","Ähtäri","Äänekoski" };
@@ -119,7 +119,7 @@
 
                                 <form>
                                     <div class="form-group">
-                                        <label for="Industry"><b>Choose begin date</b></label><br/>
+                                        <label for="Alkupvm"><b>Choose begin date</b></label><br/>
                                         <div class='input-group date' id='datepicker1'>
                                             <input type='text' class="form-control" placeholder="dd/mm/yyyy" />
                                             <span class="input-group-addon">
@@ -134,7 +134,7 @@
 
                                 <form>
                                     <div class="form-group">
-                                        <label for="Industry"><b>Choose end date</b></label><br/>
+                                        <label for="Loppupvm"><b>Choose end date</b></label><br>
                                         <div class='input-group date' id='datepicker2'>
                                             <input type='text' class="form-control" placeholder="dd/mm/yyyy" />
                                             <span class="input-group-addon">
@@ -150,8 +150,8 @@
                             <li>
 
                                 <div class="search-box">
-                                    <input class="search-txt" type="text" name="" placeholder="Type to search"/>
-                                    <a class="search-btn" onclick="window.location.href = 'Yritys11.aspx';">  <!--Search buttonin linkki -->
+                                    <input class="search-txt" type="text" name="" placeholder="Type to search">
+                                    <a class="search-btn" href="Yritys11.aspx"> <!-- search button -->
                                         <i class="fa fa-search"></i>
                                     </a>
                                 </div>
@@ -161,6 +161,10 @@
 
 
                         </ul>
+
+
+
+
                     </div>
 
                 </nav>
@@ -199,14 +203,14 @@
 
             </div>
             <div class="col-sm-9" id="middlebar1">
-                <h3>List of companies</h3>
+                <h3>Finnair Ltd</h3>
                 <p>
-                    Here should be a list of companies that came up with your search
-                    
+                   
+                     Here is basic information about the selected company. Its history, present and future, where it was formed, when and by who, what they do and how. You will also see the company’s stock situation.
+                
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
                 </p>
-                <a href ="Yritys12.aspx"> Olvi </a><br /> <!-- Linkkejä yritysten sivuille -->
-                 <a href ="Yritys13.aspx"> Finnair </a><br />
-                 <a href ="Yritys14.aspx"> Nokia </a><br />
 
 
             </div>
@@ -225,7 +229,7 @@
             <div class="col-sm-12" id="footer">
 
                 <p>
-                    This is our best try! This needs to stick in the bottom of the page all the time<br/>
+                    This is our best try! This needs to stick in the bottom of the page all the time<br>
                     &copy;
                     Team5
                 </p>
@@ -263,6 +267,7 @@
         });
     </script>
     <!--kalenteri loppu-->
+  
     <!--kalenteri2-->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
     <script>
@@ -281,6 +286,7 @@
         });
     </script>
     <!--kalenteri2 loppuu-->
+
 
 </body>
 </html>

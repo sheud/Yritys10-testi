@@ -70,6 +70,8 @@
     <Content Include="Web.config" />
     <Content Include="Yritys11.aspx" />
     <Content Include="Yritys12.aspx" />
+    <Content Include="Yritys13.aspx" />
+    <Content Include="Yritys14.aspx" />
     <Content Include="Yrityshakusivu.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -87,6 +89,20 @@
     </Compile>
     <Compile Include="Yritys12.aspx.designer.cs">
       <DependentUpon>Yritys12.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Yritys13.aspx.cs">
+      <DependentUpon>Yritys13.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Yritys13.aspx.designer.cs">
+      <DependentUpon>Yritys13.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Yritys14.aspx.cs">
+      <DependentUpon>Yritys14.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Yritys14.aspx.designer.cs">
+      <DependentUpon>Yritys14.aspx</DependentUpon>
     </Compile>
     <Compile Include="Yrityshakusivu.aspx.cs">
       <DependentUpon>Yrityshakusivu.aspx</DependentUpon>
