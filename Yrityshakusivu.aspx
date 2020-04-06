@@ -63,7 +63,7 @@
 
                                     <div class="form-group">
                                         <label for="City"><b>Select City</b></label><br>
-                                        <select name="City" id="ChosenCity" class="selectpicker" multiple>
+                                        <select name="City" id="ChosenCity" class="selectpicker">
                                             <%
                                                 for (int i = 0; i < municipalities.Length; i++)
                                                 {
@@ -86,7 +86,7 @@
 
                                     <div class="form-group">
                                         <label for="Industry"><b>Select Industries</b></label><br/>
-                                        <select name="Industry" id="ChosenIndustry" class="selectpicker" multiple>
+                                        <select name="Industry" id="ChosenIndustry" class="selectpicker">
                                             <%
                                                 for (int a = 0; a < field.Length; a++)
                                                 {
@@ -157,7 +157,7 @@
                             <li>
 
                                 <div class="search-box">
-                                    <input class="search-txt" type="text" name="" placeholder="Type to search"/>
+                                    <input class="search-txt"  type=="text" name="Haku" placeholder="Type to search"/> <!-- value yritys -->
                                        <a class="search-btn" href="Yritys11.aspx">  <!--Search buttonin linkki -->
                                         <i class="fa fa-search"></i>
                                     </a>

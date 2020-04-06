@@ -58,7 +58,7 @@
 
                                     <div class="form-group">
                                         <label for="City"><b>Select City</b></label><br>
-                                        <select name="City" id="ChosenCity" class="selectpicker" multiple>
+                                        <select name="City" id="ChosenCity" class="selectpicker" >
                                             <%
                                                 for (int i = 0; i < municipalities.Length; i++)
                                                 {
@@ -81,7 +81,7 @@
 
                                     <div class="form-group">
                                         <label for="Industry"><b>Select Industries</b></label><br/>
-                                        <select name="Industry" id="ChosenIndustry" class="selectpicker" multiple>
+                                        <select name="Industry" id="ChosenIndustry" class="selectpicker" >
                                             <%
                                                 for (int a = 0; a < field.Length; a++)
                                                 {
@@ -101,7 +101,7 @@
                                         %>
                                     <div class="form-group">
                                         <label for="Size"><b>Select Company Size</b></label><br/>
-                                        <select name="Size" id="ChosenSize" class="selectpicker" multiple>
+                                        <select name="Size" id="ChosenSize" class="selectpicker" >
                                               <%
                                                 for (int k = 0; k < size.Length; k++)
                                                 {
@@ -109,6 +109,7 @@
                                                 }
                                                 %>
                                         </select>
+                                        
                                     </div>
                                 </form>
 
