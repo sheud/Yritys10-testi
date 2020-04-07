@@ -49,125 +49,42 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
+                        
 
 
-                            
-                            <!--multicheck dropdown boxit alkaa-->
-                            <li>
-                              <form action="#">
-                                    <%
-                                        String[] municipalities = { "Akaa","Alajärvi","Alavieska","Alavus","Asikkala","Askola","Aura","Brändö","Eckerö","Enonkoski","Enontekiö","Espoo","Eura","Eurajoki","Evijärvi","Finström","Forssa","Föglö","Geta","Haapajärvi","Haapavesi","Hailuoto","Halsua","Hamina","Hammarland","Hankasalmi","Hanko","Harjavalta","Hartola","Hattula","Hausjärvi","Heinola","Heinävesi","Helsinki","Hirvensalmi","Hollola","Honkajoki","Huittinen","Humppila","Hyrynsalmi","Hyvinkää","Hämeenkyrö","Hämeenlinna","Ii","Iisalmi","Iitti","Ikaalinen","Ilmajoki","Ilomantsi","Imatra","Inari","Inkoo","Isojoki","Isokyrö","Janakkala","Joensuu","Jokioinen","Jomala","Joroinen","Joutsa","Juuka","Juupajoki","Juva","Jyväskylä","Jämijärvi","Jämsä","Järvenpää","Kaarina","Kaavi","Kajaani","Kalajoki","Kangasala","Kangasniemi","Kankaanpää","Kannonkoski","Kannus","Karijoki","Karkkila","Karstula","Karvia","Kaskinen","Kauhajoki","Kauhava","Kauniainen","Kaustinen","Keitele","Kemi","Kemijärvi","Keminmaa","Kemiönsaari","Kempele","Kerava","Keuruu","Kihniö","Kinnula","Kirkkonummi","Kitee","Kittilä","Kiuruvesi","Kivijärvi","Kokemäki","Kokkola","Kolari","Konnevesi","Kontiolahti","Korsnäs","Koski Tl","Kotka","Kouvola","Kristiinankaupunki","Kruunupyy","Kuhmo","Kuhmoinen","Kumlinge","Kuopio","Kuortane","Kurikka","Kustavi","Kuusamo","Kyyjärvi","Kärkölä","Kärsämäki","Kökar","Lahti","Laihia","Laitila","Lapinjärvi","Lapinlahti","Lappajärvi","Lappeenranta","Lapua","Laukaa","Lemi","Lemland","Lempäälä","Leppävirta","Lestijärvi","Lieksa","Lieto","Liminka","Liperi","Lohja","Loimaa","Loppi","Loviisa","Luhanka","Lumijoki","Lumparland","Luoto","Luumäki","Maalahti","Maarianhamina - Mariehamn","Marttila","Masku","Merijärvi","Merikarvia","Miehikkälä","Mikkeli","Muhos","Multia","Muonio","Mustasaari","Muurame","Mynämäki","Myrskylä","Mäntsälä","Mänttä-Vilppula","Mäntyharju","Naantali","Nakkila","Nivala","Nokia","Nousiainen","Nurmes","Nurmijärvi","Närpiö","Orimattila","Oripää","Orivesi","Oulainen","Oulu","Outokumpu","Padasjoki","Paimio","Paltamo","Parainen","Parikkala","Parkano","Pedersören kunta","Pelkosenniemi","Pello","Perho","Pertunmaa","Petäjävesi","Pieksämäki","Pielavesi","Pietarsaari","Pihtipudas","Pirkkala","Polvijärvi","Pomarkku","Pori","Pornainen","Porvoo","Posio","Pudasjärvi","Pukkila","Punkalaidun","Puolanka","Puumala","Pyhtää","Pyhäjoki","Pyhäjärvi","Pyhäntä","Pyhäranta","Pälkäne","Pöytyä","Raahe","Raasepori","Raisio","Rantasalmi","Ranua","Rauma","Rautalampi","Rautavaara","Rautjärvi","Reisjärvi","Riihimäki","Ristijärvi","Rovaniemi","Ruokolahti","Ruovesi","Rusko","Rääkkylä","Saarijärvi","Salla","Salo","Saltvik","Sastamala","Sauvo","Savitaipale","Savonlinna","Savukoski","Seinäjoki","Sievi","Siikainen","Siikajoki","Siikalatva","Siilinjärvi","Simo","Sipoo","Siuntio","Sodankylä","Soini","Somero","Sonkajärvi","Sotkamo","Sottunga","Sulkava","Sund","Suomussalmi","Suonenjoki","Sysmä","Säkylä","Taipalsaari","Taivalkoski","Taivassalo","Tammela","Tampere","Tervo","Tervola","Teuva","Tohmajärvi","Toholampi","Toivakka","Tornio","Turku","Tuusniemi","Tuusula","Tyrnävä","Ulvila","Urjala","Utajärvi","Utsjoki","Uurainen","Uusikaarlepyy","Uusikaupunki","Vaala","Vaasa","Valkeakoski","Valtimo","Vantaa","Varkaus","Vehmaa","Vesanto","Vesilahti","Veteli","Vieremä","Vihti","Viitasaari","Vimpeli","Virolahti","Virrat","Vårdö","Vöyri","Ylitornio","Ylivieska","Ylöjärvi","Ypäjä","Ähtäri","Äänekoski" };
-                                        %>
+                         
+                             <!--multicheck dropdown boxit alkaa-->
+                             <form id="form1" runat="server" method="post" action="Yritys11.aspx">
+                                         <%
+                                             String[] municipalities = { "Akaa","Alajärvi","Alavieska","Alavus","Asikkala","Askola","Aura","Brändö","Eckerö","Enonkoski","Enontekiö","Espoo","Eura","Eurajoki","Evijärvi","Finström","Forssa","Föglö","Geta","Haapajärvi","Haapavesi","Hailuoto","Halsua","Hamina","Hammarland","Hankasalmi","Hanko","Harjavalta","Hartola","Hattula","Hausjärvi","Heinola","Heinävesi","Helsinki","Hirvensalmi","Hollola","Honkajoki","Huittinen","Humppila","Hyrynsalmi","Hyvinkää","Hämeenkyrö","Hämeenlinna","Ii","Iisalmi","Iitti","Ikaalinen","Ilmajoki","Ilomantsi","Imatra","Inari","Inkoo","Isojoki","Isokyrö","Janakkala","Joensuu","Jokioinen","Jomala","Joroinen","Joutsa","Juuka","Juupajoki","Juva","Jyväskylä","Jämijärvi","Jämsä","Järvenpää","Kaarina","Kaavi","Kajaani","Kalajoki","Kangasala","Kangasniemi","Kankaanpää","Kannonkoski","Kannus","Karijoki","Karkkila","Karstula","Karvia","Kaskinen","Kauhajoki","Kauhava","Kauniainen","Kaustinen","Keitele","Kemi","Kemijärvi","Keminmaa","Kemiönsaari","Kempele","Kerava","Keuruu","Kihniö","Kinnula","Kirkkonummi","Kitee","Kittilä","Kiuruvesi","Kivijärvi","Kokemäki","Kokkola","Kolari","Konnevesi","Kontiolahti","Korsnäs","Koski Tl","Kotka","Kouvola","Kristiinankaupunki","Kruunupyy","Kuhmo","Kuhmoinen","Kumlinge","Kuopio","Kuortane","Kurikka","Kustavi","Kuusamo","Kyyjärvi","Kärkölä","Kärsämäki","Kökar","Lahti","Laihia","Laitila","Lapinjärvi","Lapinlahti","Lappajärvi","Lappeenranta","Lapua","Laukaa","Lemi","Lemland","Lempäälä","Leppävirta","Lestijärvi","Lieksa","Lieto","Liminka","Liperi","Lohja","Loimaa","Loppi","Loviisa","Luhanka","Lumijoki","Lumparland","Luoto","Luumäki","Maalahti","Maarianhamina - Mariehamn","Marttila","Masku","Merijärvi","Merikarvia","Miehikkälä","Mikkeli","Muhos","Multia","Muonio","Mustasaari","Muurame","Mynämäki","Myrskylä","Mäntsälä","Mänttä-Vilppula","Mäntyharju","Naantali","Nakkila","Nivala","Nokia","Nousiainen","Nurmes","Nurmijärvi","Närpiö","Orimattila","Oripää","Orivesi","Oulainen","Oulu","Outokumpu","Padasjoki","Paimio","Paltamo","Parainen","Parikkala","Parkano","Pedersören kunta","Pelkosenniemi","Pello","Perho","Pertunmaa","Petäjävesi","Pieksämäki","Pielavesi","Pietarsaari","Pihtipudas","Pirkkala","Polvijärvi","Pomarkku","Pori","Pornainen","Porvoo","Posio","Pudasjärvi","Pukkila","Punkalaidun","Puolanka","Puumala","Pyhtää","Pyhäjoki","Pyhäjärvi","Pyhäntä","Pyhäranta","Pälkäne","Pöytyä","Raahe","Raasepori","Raisio","Rantasalmi","Ranua","Rauma","Rautalampi","Rautavaara","Rautjärvi","Reisjärvi","Riihimäki","Ristijärvi","Rovaniemi","Ruokolahti","Ruovesi","Rusko","Rääkkylä","Saarijärvi","Salla","Salo","Saltvik","Sastamala","Sauvo","Savitaipale","Savonlinna","Savukoski","Seinäjoki","Sievi","Siikainen","Siikajoki","Siikalatva","Siilinjärvi","Simo","Sipoo","Siuntio","Sodankylä","Soini","Somero","Sonkajärvi","Sotkamo","Sottunga","Sulkava","Sund","Suomussalmi","Suonenjoki","Sysmä","Säkylä","Taipalsaari","Taivalkoski","Taivassalo","Tammela","Tampere","Tervo","Tervola","Teuva","Tohmajärvi","Toholampi","Toivakka","Tornio","Turku","Tuusniemi","Tuusula","Tyrnävä","Ulvila","Urjala","Utajärvi","Utsjoki","Uurainen","Uusikaarlepyy","Uusikaupunki","Vaala","Vaasa","Valkeakoski","Valtimo","Vantaa","Varkaus","Vehmaa","Vesanto","Vesilahti","Veteli","Vieremä","Vihti","Viitasaari","Vimpeli","Virolahti","Virrat","Vårdö","Vöyri","Ylitornio","Ylivieska","Ylöjärvi","Ypäjä","Ähtäri","Äänekoski" };
+                                             String selected = "";
+                                             if (Request.Form.Count > 0)
+                                                 selected = Request.Form["Select1"];
+                                             %>
 
 
-                                    <div class="form-group">
-                                        <label for="City"><b>Select City</b></label><br>
-                                        <select name="City" id="ChosenCity" class="selectpicker">
-                                            <%
+                                         <div>
+                                             <label for="City"><b>Select City</b></label>
+                                            <select id="Select1" name="Select1">
+                                              <%
                                                 for (int i = 0; i < municipalities.Length; i++)
                                                 {
+                                                      if(selected != "" && selected == municipalities[i])
+                                                    Response.Write("<option selected = \"selected\" value=\"" + municipalities[i] + "\">" + municipalities[i] + "</option>");
+                                                      else
                                                     Response.Write("<option value=\"" + municipalities[i] + "\">" + municipalities[i] + "</option>");
                                                 }
                                                 %>
-                                           
                                         </select>
-                                    </div>
-                                </form>
-
-                            </li>
-                            <li>
-
-                                <form action="#">
-
-                                    <%
-                                        String[] field = {"Beauty","Commerce and food","Construction","Education","Healthcare","Hospitality and tourism","IT","Logistics","Wood and forest" };
-                                        %>
-
-                                    <div class="form-group">
-                                        <label for="Industry"><b>Select Industries</b></label><br/>
-                                        <select name="Industry" id="ChosenIndustry" class="selectpicker">
-                                            <%
-                                                for (int a = 0; a < field.Length; a++)
-                                                {
-                                                    Response.Write("<option value=\"" + field[a] + "\">" + field[a] + "</option>");
-                                                }
-                                                %>
-                                        </select>
-                                    </div>
-                                </form>
-
-                            </li>
-                            <li>
-
-                                <form action="#">
-                                      <%
-                                        String[] size = {"Small","Medium","Big" };
-                                        %>
-                                    <div class="form-group">
-                                        <label for="Size"><b>Select Company Size</b></label><br/>
-                                        <select name="Size" id="ChosenSize" class="selectpicker" multiple>
-                                              <%
-                                                for (int k = 0; k < size.Length; k++)
-                                                {
-                                                    Response.Write("<option value=\"" + size[k] + "\">" + size[k] + "</option>");
-                                                }
-                                                %>
-                                        </select>
-                                    </div>
-                                </form>
-
-                            </li>
-                            <!--multicheck dropdownit loppuu-->
-                            <!--kalenteriyritys-->
-                            <li id="kalenterilista1">
-
-                                <form>
-                                    <div class="form-group1">
-                                        <label for="Industry"><b>Choose begin date</b></label><br/>
-                                        <div class='input-group date' id='datepicker1'>
-                                            <input type='text' class="form-control" placeholder="dd/mm/yyyy" />
-                                            <span class="input-group-addon">
-                                                <span class="glyphicon glyphicon-calendar"></span>
-                                            </span>
+                                             <label for="startDate"><b>Select start date</b></label>
+                                        <input id="Kalenteri1" name="Kalenteri1" value="<%=Convert.ToString(Request.Form["Kalenteri1"]) %>" type="text" placeholder="dd/mm/yyyy"/>
+                                             <label for="endDate"><b>Select end date</b></label>
+                                        <input id="Kalenteri2" name="Kalenteri2" value="<%=Convert.ToString(Request.Form["Kalenteri2"]) %>" type="text" placeholder="dd/mm/yyyy"/>
+                                             <input id="submitButton" type="submit" value="Get companies" />
                                         </div>
-                                    </div>
-                                </form>
+                                         </form>
 
-                            </li>
-                            <li id="kalenterilista2">
-
-                                <form>
-                                    <div class="form-group2">
-                                        <label for="Industry"><b>Choose end date</b></label><br/>
-                                        <div class='input-group date' id='datepicker2'>
-                                            <input type='text' class="form-control" placeholder="dd/mm/yyyy" />
-                                            <span class="input-group-addon">
-                                                <span class="glyphicon glyphicon-calendar"></span>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </form>
-
-                            </li>
-
-
-                            <!--kalenteriyritys loppu-->
-                            <!--search boxi-->
-                            <li>
-
-                                <div class="search-box">
-                                    <input class="search-txt"  type=="text" name="Haku" placeholder="Type to search"/> <!-- value yritys -->
-                                       <a class="search-btn" href="Yritys11.aspx">  <!--Search buttonin linkki -->
-                                        <i class="fa fa-search"></i>
-                                    </a>
-                                </div>
-
-                            </li>
-                            <!--search box loppuu-->
-
-
-                        </ul>
+                        
                     </div>
 
                 </nav>
@@ -208,7 +125,8 @@
                 <p>
                     Welcome to Registered Companies! From this site you will find all the necessary information you need about the new companies in your selected area!
 
-                    You can filter by the area, registration date, industry, company size and sales.
+                    You can filter by the area, registration date, industry, company size and sales. <br />
+                    <b>Just kidding no you cant....yet atleast</b>
                 </p>
                 <img src="images/laptop.jpg" alt="kompuutteri" class="responsive">
 
@@ -248,41 +166,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
 
-    <!--kalenteri1-->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
-    <script>
-        $(function () {
-            $('#datepicker1').datepicker({
-                format: "dd/mm/yyyy",
-                autoclose: true,
-                todayHighlight: true,
-                showOtherMonths: true,
-                selectOtherMonths: true,
-                autoclose: true,
-                changeMonth: true,
-                changeYear: true,
-                orientation: "button"
-            });
-        });
-    </script>
-    <!--kalenteri1 loppu-->
-    <!--kalenteri2-->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
-    <script>
-        $(function () {
-            $('#datepicker2').datepicker({
-                format: "dd/mm/yyyy",
-                autoclose: true,
-                todayHighlight: true,
-                showOtherMonths: true,
-                selectOtherMonths: true,
-                autoclose: true,
-                changeMonth: true,
-                changeYear: true,
-                orientation: "button"
-            });
-        });
-    </script>
-    <!--kalenteri2 loppuu-->
+    
 </body>
 </html>
